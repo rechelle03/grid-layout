@@ -19,7 +19,7 @@ body{
 }
 
 .navigation{
-    background-color:#f5ceea;
+    background-color: rgb(245, 168, 181);
     text-align: center;
     padding: 20px;
 }
@@ -41,6 +41,10 @@ body{
     text-decoration: none;
     font-size: 18px;
     color: black;
+}
+
+.navigation ul li a:hover {
+    color: palevioletred;
 }
 
 .articles {
@@ -75,7 +79,7 @@ body{
 }
 
 .footer {
-    background-color: pink;
+    background-color: rgb(233, 158, 171);
     padding: 20px;
 }
 
