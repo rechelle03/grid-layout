@@ -14,6 +14,10 @@ body{
     padding: 20px;
 }
 
+.header h1 {
+    font-size: 4vw;
+}
+
 .title{
     text-align: center;
 }
@@ -24,22 +28,26 @@ body{
     padding: 20px;
 }
 
+.navigation h2 {
+    font-size: 2vw;
+}
+
 .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .navigation ul li {
     display: inline;
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 .navigation ul li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.5vw;
     color: black;
 }
 
@@ -49,12 +57,11 @@ body{
 
 .articles {
     display: grid;
-    grid-template-columns: 45% 45%;
-    padding: 20px;
-    padding-left: 80px;
-    row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
     column-gap: 40px;
     background-color: lightpink;
+    padding: 20px;
 }
 
 .articles p {
@@ -64,18 +71,21 @@ body{
 
 .articles h3 {
     text-align: center;
+    font-size: 1.4vw;
+}
+
+.articles p {
+    font-size: 1.2vw;
 }
 
 .art1-pic img {
-    height: 250px; 
-    margin: 5px;
-    margin-left: 55px;
+    width: 100%;
+    height: auto; 
 }
 
 .art2-pic img {
-    height: 250px; 
-    margin: 5px;
-    margin-left: 57px;
+    width: 100%;
+    height: auto;
 }
 
 .footer {
@@ -85,4 +95,31 @@ body{
 
 .footer .copyright {
     text-align: center;
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width: 500px) {
+    .header h1{
+        font-size: larger;
+    }
+
+    .navigation h2 {
+        font-size: large;
+    }
+
+    .navigation ul li a {
+        font-size: small;
+    }
+
+    .articles h3 {
+        font-size: small;
+    }
+
+    .articles p {
+        font-size: smaller;
+    }
+
+    .footer .copyright {
+        font-size: x-small;
+    }
 }
